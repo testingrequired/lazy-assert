@@ -6,7 +6,12 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "test",
+    "testing",
+    "assert"
+  ],
+  "files": [],
   "author": "Kylee Tilley <kylee@testingrequired.com>",
   "license": "MIT",
   "devDependencies": {
