@@ -1,0 +1,15 @@
+{
+  "name": "@testingrequired/lazy-assert",
+  "version": "1.0.0",
+  "description": "A lazy implementation of Node's assert",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Kylee Tilley <kylee@testingrequired.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
