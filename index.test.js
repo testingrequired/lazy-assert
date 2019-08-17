@@ -1,5 +1,5 @@
 const assert = require("assert");
-const lazyAssert = require("./index");
+const lazyAssert = require("./index").default;
 
 jest.mock("assert");
 

@@ -15,4 +15,8 @@ lazyAssert.doesNotThrow = lazy(assert.doesNotThrow);
 lazyAssert.fail = lazy(assert.fail);
 lazyAssert.ok = lazy(assert.ok);
 
-module.exports = lazyAssert;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+module.exports.default = lazyAssert;
