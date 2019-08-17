@@ -1,6 +1,6 @@
 {
   "name": "@testingrequired/lazy-assert",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lazy implementation of Node's assert",
   "main": "index.js",
   "scripts": {
