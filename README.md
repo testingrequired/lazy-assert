@@ -8,9 +8,19 @@ A lazy wrapper around Node's `assert` module.
 $ npm i -D @testingrequired/lazy-assert
 ```
 
+## Usage
+
+```javascript
+import assert from "@testingrequired/lazy-assert";
+
+assert(1 === 2, "They don't equal"); // Returns a function
+
+assert(1 === 2, "They don't equal")(); // Runs assertion
+```
+
 ## Why?
 
-Lazy assertions are essential for building multi assert assertions.
+Lazy assertions are essential for building something like multi assert assertions.
 
 ```javascript
 import assert from "@testingrequired/lazy-assert";
@@ -24,23 +34,6 @@ const asserts = [
   assert(point.x, "x not defined", assert(point.y, "y not defined"))
 ];
 
-// This is where those assertions will be called
-multiAssert(...asserts);
-
-// An example multi assert implementation
-function multiAssert(...asserts) {
-  const errors = asserts
-    .map(a => {
-      try {
-        a.call(null);
-      } catch (e) {
-        return e;
-      }
-    })
-    .filter(x => x);
-
-  assert.fail(errors);
-}
+// Some multi assert implementation
+multiAssert(...asserts, "Something is wrong");
 ```
-
-##
